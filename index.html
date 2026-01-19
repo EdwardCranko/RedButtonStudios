@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Red Button Studios - Where blazing performance meets pixel-perfect design.">
+  <meta name="theme-color" content="#000000">
+  
+  <title>Red Button Studios</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- GSAP for animations -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?v=2"></script>
+  
+  <!-- Lenis for Smooth Scrolling -->
+  <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+  
+  <!-- Local OGL Implementation -->
+  <script src="js/ogl-local.js"></script>
+  
+  <!-- Spline Embed -->
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://my.spline.design">
+  <link rel="preconnect" href="https://prod.spline.design">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Red button Studios Logo.png">
+</head>
+<body class="site-locked">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Site Overlay -->
+  <div class="site-overlay" id="siteOverlay" aria-hidden="false">
+    <div class="overlay-grid" aria-hidden="true"></div>
+    <div class="overlay-card overlay-card--minimal">
+      <div class="overlay-brand">
+        <img src="Red button Studios  Logo Latest.png" alt="Red Button Studios" class="overlay-logo" />
+        <div class="overlay-brand-text">
+          <span class="overlay-brand-name">Red Button Studios</span>
+          <span class="overlay-role">Digital Experience Design</span>
+        </div>
+      </div>
+      <h1 class="overlay-title">Edward Cranko</h1>
+      <p class="overlay-subtitle">Modern web development: fast, beautiful, and built for results.</p>
+      <div class="overlay-links">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=redbuttonstudios.dev@gmail.com" target="_blank" rel="noopener noreferrer" class="overlay-link" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/red-button-studios-739a443a3/" target="_blank" rel="noopener noreferrer" class="overlay-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://github.com/EdwardCranko?tab=overview&from=2026-01-01&to=2026-01-08" target="_blank" rel="noopener noreferrer" class="overlay-link" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="overlay-actions">
+        <button class="overlay-cta overlay-cta--small" id="enterSite">Enter Studio</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <!-- Logo - Top Left -->
+    <a href="#" class="site-logo">
+      <img src="Red button Studios Logo.png" alt="Red Button Studios">
+      <span>Red Button Studios</span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="pill-nav-container">
+      <div class="pill-nav desktop-only">
+        <div class="pill-nav-items">
+          <ul class="pill-list">
+            <li><a href="index.html#main" class="pill">Home</a></li>
+            <li><a href="about.html" class="pill">About</a></li>
+            <li><a href="portfolio.html" class="pill">Portfolio</a></li>
+          </ul>
+        </div>
+        
+        <div class="pill-nav-items pill-socials">
+          <ul class="pill-list">
+            <li>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=redbuttonstudios.dev@gmail.com" target="_blank" rel="noopener noreferrer" class="pill pill-icon" aria-label="Contact">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/edward-cranko-8a0688227/" target="_blank" rel="noopener noreferrer" class="pill pill-icon" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/EdwardCranko?tab=overview&from=2026-01-01&to=2026-01-08" target="_blank" rel="noopener noreferrer" class="pill pill-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-button" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu Popover -->
+    <div class="mobile-menu-popover" id="mobileMenu">
+      <ul class="mobile-menu-list">
+        <li><a href="index.html#main" class="mobile-menu-link">Home</a></li>
+        <li><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li><a href="portfolio.html" class="mobile-menu-link">Portfolio</a></li>
+        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=redbuttonstudios.dev@gmail.com" target="_blank" rel="noopener noreferrer" class="mobile-menu-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <!-- Spline 3D Orb -->
+      <div class="hero__orb" id="orb">
+        <iframe
+          class="spline-embed"
+          src="https://my.spline.design/radiantliquidsphere-QSiLD2EoRY9l3U400Of5WCOb/"
+          frameborder="0"
+          width="100%"
+          height="100%"
+          allow="fullscreen"
+          title="Radiant Liquid Sphere"
+        ></iframe>
+        <div class="orb__logo-mask" aria-hidden="true"></div>
+      </div>
+      
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Combined About & Portfolio Section -->
+    <section class="about-portfolio-section" id="about">
+      <div class="container about-portfolio-grid">
+        <!-- About Card - Left Side -->
+        <div class="about-column">
+          <div class="glass-card about__card">
+            <div class="aurora-container" id="aboutAurora"></div>
+            <div class="about__content">
+              <div class="about__intro">
+                <p class="about__intro-text">
+                  I am passionate about all things creative and enjoy building websites, brand identities and managing social media pages. My journey began with a love for visual storytelling, which has evolved into a comprehensive skill set that bridges creativity and technology.
+                </p>
+              </div>
+              <div class="about__skills">
+                <span class="skill-tag">Web Performance</span>
+                <span class="skill-tag">Quality-Focused</span>
+                <span class="skill-tag">Human Focused</span>
+                <span class="skill-tag">Rock-Solid Foundations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Carousel - Right Side -->
+        <div class="portfolio-column" id="work">
+                    
+          <div class="card-swap-container" id="cardSwap">
+          <!-- Project Cards -->
+          <div class="card" data-index="0">
+            <div class="card__image">
+              <img src="Projects Card 1 - DataCloudix.png" alt="DataCloudix" />
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">DataCloudix</h3>
+            </div>
+          </div>
+          
+          <div class="card" data-index="1">
+            <div class="card__image">
+              <img src="Projects Card 2 - Aden Motors.png" alt="Aden Motors" />
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Aden Motors</h3>
+              <div class="card__actions">
+                <a href="https://adenmotors.co.za/" target="_blank" rel="noopener noreferrer" class="btn btn--small">Live Site</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card" data-index="2">
+            <div class="card__image">
+              <img src="Projects Card 3 - Purposeful Living International.png" alt="Purposeful Living International" />
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Purposeful Living International</h3>
+              <div class="card__actions">
+                <a href="https://lizkscotch.com/" target="_blank" rel="noopener noreferrer" class="btn btn--small">Live Site</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card" data-index="3">
+            <div class="card__image">
+              <img src="Projects Card 4 - Whispa.quest.png" alt="Whispa.quest" />
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Whispa.quest</h3>
+              <div class="card__actions">
+                <a href="https://whispa.quest/" target="_blank" rel="noopener noreferrer" class="btn btn--small">Live Site</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card" data-index="4">
+            <div class="card__image">
+              <img src="Projects Card 5 - Imperial Brake & Clutch.png" alt="Imperial Brake & Clutch" />
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Imperial Brake & Clutch</h3>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        © 2026 Red Button Studios
+      </p>
+      <button class="footer__top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <h2 class="modal-title" id="modalTitle">Project Title</h2>
+        <div class="modal-body" id="modalBody">
+          Project description goes here.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js?v=2"></script>
+</body>
+</html>
