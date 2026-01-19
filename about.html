@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Edward - Red Button Studios">
+  <meta name="theme-color" content="#000000">
+  
+  <title>About | Red Button Studios</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- GSAP for animations -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?v=2"></script>
+  
+  <!-- Lenis for Smooth Scrolling -->
+  <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Red button Studios Logo.png">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Logo - Top Left -->
+  <a href="index.html" class="site-logo" aria-label="Red Button Studios - Home">
+    <img src="Red button Studios Logo.png" alt="Red Button Studios Logo">
+    <span>Red Button Studios</span>
+  </a>
+
+  <!-- Pill Navigation - Top Right -->
+  <header class="pill-nav-container">
+    <nav class="pill-nav" aria-label="Main navigation">
+      <div class="pill-nav-items pill-nav-items--always">
+        <ul class="pill-list" id="navMenu" role="menubar">
+          <li role="none"><a href="index.html#main" class="pill" role="menuitem"><span class="label-stack"><span class="pill-label">Home</span></span></a></li>
+          <li role="none"><a href="about.html" class="pill" role="menuitem"><span class="label-stack"><span class="pill-label">About</span></span></a></li>
+          <li role="none"><a href="portfolio.html" class="pill" role="menuitem"><span class="label-stack"><span class="pill-label">Portfolio</span></span></a></li>
+        </ul>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-button" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu Popover -->
+    <div class="mobile-menu-popover" id="mobileMenu">
+      <ul class="mobile-menu-list">
+        <li><a href="index.html#main" class="mobile-menu-link">Home</a></li>
+        <li><a href="about.html" class="mobile-menu-link">About</a></li>
+        <li><a href="portfolio.html" class="mobile-menu-link">Portfolio</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" class="portfolio-page">
+    <div class="container">
+      <header class="portfolio-header">
+        <h1 class="portfolio-title">About Edward</h1>
+      </header>
+      <div class="about-content">
+        <p class="about-text">
+          I design and build websites and web applications that feel polished, clear, and enjoyable to use.
+        </p>
+        <p class="about-text">
+          My focus is on quality in the details - clean layout, balanced typography, thoughtful motion, and consistent interaction patterns - so the experience looks refined and works smoothly across devices. I care equally about what users see and what sits behind it: sensible structure and careful implementation that supports long-term stability.
+        </p>
+        <p class="about-text">
+          For me, great web work is the intersection of beauty and usefulness: an interface that communicates well, respects the user's time, and reflects the standard of the brand it represents.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        © 2026 Red Button Studios
+      </p>
+      <button class="footer__top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js?v=2"></script>
+</body>
+</html>
